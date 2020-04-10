@@ -1,0 +1,26 @@
+kr.wordpress.org
+에서 다운로드
+압축푼 폴더 portfolio로 이름바꾸기
+폴더 C:\xampp\htdocs\portfolio 여기로 옮기기
+주소창에 localhost/portfolio 치고
+다른 주소창에 localhost-phpMyAdmin에서 새로운 portfolio만든다
+주소창에 localhost/portfolio 친 데에서 렛츠고, 데이터베이스 ㅇㄴ결정보 입력
+portfolio, root, (공백) 순으로 3개 입력
+
+
+#워드프레스 테마 포레스트
+
+orfeo
+
+새페이지추가-Home-공개 두번클릭
+-페이지속성-page builder full width
+
+플러그인-새로추가-elementor 설치-활성화
+
+설정-읽기-정적인 페이지-홈페이지=home, 글페이지=선택하기로 설정
+
+#layout-height-Fit to screen
+
+#elements-spacer 화면에 드래그앤드롭
+
+#elements-divider

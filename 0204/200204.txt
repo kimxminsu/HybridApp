@@ -1,0 +1,33 @@
+#css zen garden 구글에 검색
+css 테마 여러개 있음
+
+#태그+엘리먼트=콘텐츠
+
+#주석 <!--
+
+#margin바깥여백, padding안쪽여백
+
+#XAMPP
+
+#localhost=127.0.0.1(특수목적?)=ipconfig검색하면 뜨는거(외부에서는 이거로해야함) 
+
+#admin user login
+https://codewithawa.com/posts/admin-and-user-login-in-php-and-mysql-database
+이거 해보자
+
+#C-xampp-htdocs-login(새로만든폴더)-register.php
+C-xampp-htdocs-login(새로만든폴더)-style.css
+
+phpMyAdmin 들어가서 multi_login 생성
+테이블수 5개 - 실행
+
+admin안에는 create_user.php, home.php 두개 남기고
+나머지는 login(상위폴더)안에
+사진은 login-images 안에 admin_profile, user_profile이란 이름으로 만들기
+
+
+
+#실행방법
+주소창에
+http://localhost/login/admin/create_user.php
+회원가입 후 로그인 하면 로그인 정보 떠야함

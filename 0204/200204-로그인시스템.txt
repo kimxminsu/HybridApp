@@ -1,0 +1,4 @@
+1.XAMPP 설치
+2.multi-login DB생성(phpMyAdmin 이용)
+3.users Table 생성(id,email,usertype..)
+4.htdocs-login 폴더 생성

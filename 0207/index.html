@@ -1,0 +1,230 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<script src="cordova.js"></script>
+	<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css"/>
+	<script src="./js/jquery-1.11.1.min.js"></script>
+	<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+		
+
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>부산광역시 금정구 보건소</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="doctor1.png" >
+				<img src="doctor2.png">
+			<ul data-role="listview" data-inset="true" data-theme="b">
+				<li><a href="#intro">보건소안내</a></li>
+				<li><a href="#movie">민원·진료</a></li>
+				<li><a href="#wizard3-1">의약업무</a></li>
+				<li><a href="#gallery" >공지사항</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>(46274) 부산광역시 금정구 중앙대로 1777(부곡동) Tel: 051) 519-5051,4 Fax: 051) 519-5059</h1>
+		</div>
+	</div>
+
+
+
+	
+	<div data-role="page" id="intro">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>보건소안내</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="menu1.png">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>층별안내</h3>
+					<p>1층</br>
+					민원실, 제1진료실, 제2진료실(결핵실), 모자보건실, 수유실, 예방접종실, 영상의학실</br></br>
+					2층</br>
+					진단검사의학실, 구강보건실, 금연클리닉</br></br>
+					3층</br>
+					재활치료실, 원스톱행복바구니센터, 건강체험터</br></br>
+					4층</br>
+					차량대기실</br></br>
+					별관 4층</br>
+					보건소장실, 보건행정과/건강증진과, 치매안심센터</br></br>
+					별관 5층</br>
+					금정구 정신건강복지센터, 방문건강관리실, 암상담실, 프로그램실, 쉼터교실</br></br>
+					OPEN 공공누리, 출처표시, 상업적 이용 금지, 변경 금지 - 공공저작물 자유이용허락 마크</br>
+					본 저작물은 "공공누리" 제4유형:출처표시+상업적 이용금지+변경금지 조건에 따라 이용 할 수 있습니다.
+					</p>
+				</div>
+
+				<div data-role="collapsible">
+					<h3>찾아오시는 길</h3>
+					<div class="mobile_map">
+				<!--
+					* 카카오맵 - 약도서비스
+					* 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+					* 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+				-->
+				<!-- 1. 약도 노드 -->
+				<div id="daumRoughmapContainer1581041270065" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+				<!-- 2. 설치 스크립트 -->
+				<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+				<!-- 3. 실행 스크립트 -->
+				<script charset="UTF-8">
+					new daum.roughmap.Lander({
+						"timestamp" : "1581041270065",
+						"key" : "wwi9",
+						"mapWidth" : "640",
+						"mapHeight" : "360"
+					}).render();
+				</script>
+				</div>
+				</div>
+
+				<div data-role="collapsible" >
+					<h3>업무 안내</h3>
+					<p>진료시간 : 09:00 ~ 18:00</br>
+					점심시간 : 12:00 ~ 13:00</br>
+					매주 토요일 휴무</br>
+					문의전화
+					<a href="tel:051-519-5051">
+					<img class="call" src="call.png">
+					</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>(46274) 부산광역시 금정구 중앙대로 1777(부곡동) Tel: 051) 519-5051,4 Fax: 051) 519-5059</h1>
+		</div>		
+	</div>
+	
+
+
+
+	<div data-role="page" id="movie">
+
+		<div data-role="header" data-position="fixed" data-theme="b">
+		<!--
+		<div data-role="header" data-theme="b">
+		!-->
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>민원·진료</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="menu2.png">
+				</div>			
+			<div data-role="collapsible-set"  data-theme="b" data-content-theme="e">
+
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>사이트</h3>
+					<p>
+					<a href="http://www.geumjeong.go.kr/health/index.geumj?menuCd=DOM_000000502001000000">제증명발급</a></br>
+					<a href="http://www.geumjeong.go.kr/health/index.geumj?menuCd=DOM_000000502002001000&&cpath=%2Fhealth">보건소 예방접종 안내</a></br>
+					<a href="http://www.geumjeong.go.kr/health/index.geumj?menuCd=DOM_000000502003000000">각종검사</a></br>
+					<a href="http://www.geumjeong.go.kr/health/index.geumj?menuCd=DOM_000000502004000000">일반진료</a></br>
+					<a href="http://www.geumjeong.go.kr/health/index.geumj?menuCd=DOM_000000502005000000">물리치료</a></br>
+					<a href="http://www.geumjeong.go.kr/health/index.geumj?menuCd=DOM_000000502006000000">결핵진료</a></br>
+					<a href="https://www.g-health.kr/pagefolws/certi/CertiInf.do?cNo=200435&pGubun=Y&menuNo=200435">온라인발급</a></br>
+					<a href="http://www.geumjeong.go.kr/health/index.geumj?menuCd=DOM_000000502008000000">검사결과조회</a></br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>(46274) 부산광역시 금정구 중앙대로 1777(부곡동) Tel: 051) 519-5051,4 Fax: 051) 519-5059</h1>
+		</div>	
+	</div>
+	
+
+
+<div data-role="page" id="wizard3-1">
+    <div data-role="header" data-theme="b">
+         <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+         <a href="#wizard3-2" data-transition="slideup">다음</a>
+         <h1>의약업소현황</h1>
+      </div>
+      <div data-role="content" >
+      	<div  style="text-align:center">
+			<a href="http://www.geumjeong.go.kr/health/board/list.geumj?boardId=BBS_0000115&menuCd=DOM_000000504004000000&contentsSid=792&cpath=%2Fhealth"><img src="menu3-1.png"></a>
+		</div>	
+
+		<h6 style="text-align: center;">클릭하면 홈페이지로 이동</h6>
+      </div>
+      <div data-role="footer"  data-theme="b">
+         
+         <h1>(46274) 부산광역시 금정구 중앙대로 1777(부곡동) Tel: 051) 519-5051,4 Fax: 051) 519-5059</h1>
+      </div>
+   </div>
+
+   <div data-role="page" id="wizard3-2">
+      <div data-role="header" data-theme="b">
+         <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+         <a href="#wizard3-1"  data-transition="slidedown">이전</a>
+         <h1>휴일지킴이약국</h1>
+      </div>
+      <div data-role="content">
+      	<div  style="text-align:center">
+			 <a href="http://www.geumjeong.go.kr/health/board/list.geumj?boardId=BBS_0000116&menuCd=DOM_000000504005000000&contentsSid=793&cpath=%2Fhealth"><img src="menu3-2.png"></a>
+		</div>	
+		<h6 style="text-align: center;">클릭하면 홈페이지로 이동</h6>
+      </div>
+      <div data-role="footer"  data-theme="b">
+         
+         <h1>(46274) 부산광역시 금정구 중앙대로 1777(부곡동) Tel: 051) 519-5051,4 Fax: 051) 519-5059</h1>
+      </div>
+ </div>
+
+
+
+
+
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>공지사항</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="1.jpg" rel="external"><img src="1.jpg" /></a></li>	
+				<li><a href="2.jpg" rel="external"><img src="2.jpg" /></a></li>	
+				<li><a href="11.jpg" rel="external"><img src="11.jpg" /></a></li>	
+				<li><a href="12.jpg" rel="external"><img src="12.jpg" /></a></li>	
+				<li><a href="13.jpg" rel="external"><img src="13.jpg" /></a></li>	
+				<li><a href="14.jpg" rel="external"><img src="14.jpg" /></a></li>	
+				<li><a href="15.jpg" rel="external"><img src="15.jpg" /></a></li>	
+				<li><a href="16.jpg" rel="external"><img src="16.jpg" /></a></li>	
+				<li><a href="17.jpg" rel="external"><img src="17.jpg" /></a></li>	
+				<li><a href="18.jpg" rel="external"><img src="18.jpg" /></a></li>	
+				<li><a href="19.jpg" rel="external"><img src="19.jpg" /></a></li>	 
+				<li><a href="20.jpg" rel="external"><img src="20.jpg" /></a></li>    
+				<li><a href="21.jpg" rel="external"><img src="21.jpg" /></a></li>   
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>(46274) 부산광역시 금정구 중앙대로 1777(부곡동) Tel: 051) 519-5051,4 Fax: 051) 519-5059</h1>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>

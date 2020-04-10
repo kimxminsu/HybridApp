@@ -1,0 +1,4 @@
+Android SDK 설치
+configure 누르고 상단에 SDK Tools로 들어가서
+2,3,4(NCK)번째 빼고 다 체크
+
